@@ -1,0 +1,28 @@
+.form__container {
+    display: flex;
+    justify-content: stretch;
+    background: #ccc;
+    max-width: 395px;
+    min-height: 50px;
+}
+
+.form__container > input {
+    font-size: 20px;
+    text-align: center;
+    max-width: 150px;
+}
+
+table {
+    margin: 50px;
+    background: #00c;
+}
+
+
+tbody {
+    background: #0ff;
+}
+
+table > tbody > tr > td {
+    width: 70px;
+    height: 35px;
+}
