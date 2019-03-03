@@ -20,6 +20,7 @@ table {
 
 tbody {
     background: #0ff;
+    text-align: center;
 }
 
 table > tbody > tr > td {
