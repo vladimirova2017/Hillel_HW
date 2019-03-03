@@ -28,17 +28,6 @@ element.addEventListener('button', getValue);
 const tableCell = document.getElementsByTagName('table');
 tableCell.addEventListener('td', showCellNumber);
 
-
-/*function showCellNumber(event) {
-
- //let cellNumber = document.getElementById(`cell_${i}\.${j}`);
- //  let cellNumber = $(event.currentTarget).index();
- let cellNumber = event.target.dataset.table;
-
- alert('index of cell is ${cellNumber}');
- }*/
-
-
 function createTable(x, y) {
     const row = x;
     const column = y;
@@ -82,7 +71,7 @@ function getValue(event) {
 
 function showCellNumber(event) {
 
-   // const cellNumber = event.target.id;
+    // const cellNumber = event.target.id;
 
     alert('Index of cell is ${cellNumber}');
 }
