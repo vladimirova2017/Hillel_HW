@@ -73,7 +73,7 @@ function showCellNumber(event) {
 
     const cellNumber = event.target.id;
 
-    alert('Index of cell is ' + cellNumber);
+    alert(`Index of cell is ${cellNumber}`);
 }
 
 
