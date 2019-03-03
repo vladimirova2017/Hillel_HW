@@ -34,7 +34,7 @@ function createTable(x, y) {
 
     const tableContainer = document.createElement('table');
     const tableBody = document.createElement('tbody');
-    tableBody.setAttribute('onclick', 'showCellNumber()');
+    tableContainer.setAttribute('onclick', 'showCellNumber(event)');
 
     const rowElem = [];
     const columnElem = [];
@@ -46,8 +46,8 @@ function createTable(x, y) {
 
         for (let j = column; j > 0; j--) {
             columnElem[j] = document.createElement('td');
-            columnElem[j].idName = `cell_${i}\.${j}`;
-            columnElem[j].innerHTML = `${i}\.${j}`; //**//
+            columnElem[j].id = `cell_${i}\.${j}`;
+            columnElem[j].innerHTML = `${i}\.${j}`;
             rowElem[i].appendChild(columnElem[j]);
         }
 
@@ -71,9 +71,9 @@ function getValue(event) {
 
 function showCellNumber(event) {
 
-    // const cellNumber = event.target.id;
+    const cellNumber = event.target.id;
 
-    alert('Index of cell is ${cellNumber}');
+    alert('Index of cell is ' + cellNumber);
 }
 
 
